@@ -1,0 +1,10 @@
+@font-face {
+    font-family: "LibreBodon"i;
+    src: url(..\fonts\Libre_Bodoni\LibreBodoni-VariableFont_wght.ttf);
+}
+body {
+    font-family: "LibreBodoni", sans-serif;
+    background-color: black;
+    color: bisque;
+
+}
