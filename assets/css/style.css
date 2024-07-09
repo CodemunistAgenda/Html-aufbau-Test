@@ -2,9 +2,24 @@
     font-family: "LibreBodon"i;
     src: url(..\fonts\Libre_Bodoni\LibreBodoni-VariableFont_wght.ttf);
 }
-body {
+body{
     font-family: "LibreBodoni", sans-serif;
     background-color: black;
     color: bisque;
+    background-image: url(../../assets/images\Background-landing-Page.webp);
+    background-repeat: no no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+
 
 }
+    .container{
+        color: rgb(0, 0, 5);
+        background-color: rgb(5, 106, 236);
+        border: 2px;
+        padding: 4px;
+        margin: 2px;
+        
+    }
+
