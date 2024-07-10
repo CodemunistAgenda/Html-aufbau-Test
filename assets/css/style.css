@@ -1,25 +1,41 @@
 @font-face {
-    font-family: "LibreBodon"i;
-    src: url(..\fonts\Libre_Bodoni\LibreBodoni-VariableFont_wght.ttf);
+    font-family: "LibreBodoni";
+    src: url(../fonts/Libre_Bodoni/LibreBodoni-VariableFont_wght.ttf);
+    font-family: "kingdom_hearts";
+    src: url(../fonts/kingdom_hearts/Kingdom_Hearts_Font.ttf);
 }
 body{
+    height: auto;
     font-family: "LibreBodoni", sans-serif;
     background-color: black;
     color: bisque;
-    background-image: url(../../assets/images\Background-landing-Page.webp);
-    background-repeat: no no-repeat;
-    background-position: center;
+    background-image: url(../images/Background-landing-Page.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
     background-attachment: fixed;
     background-size: cover;
-
+}
+#Überschrift{
+    height: auto;
+    font-family: "kingdom_hearts";
+    font-size: 8em;
+    text-align: center;
+    position: relative ;
+    top: -0.7em;
+    background-image: url(../images/Galaxy.webp);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#Logo{
+    height: auto;
+    font-family: "kingdom_hearts";
+    font-size: 12em;
+    text-align: center;
+    position: relative;
+    top: -1.6em;
+    background-image: url(../images/gold\ Folie.webp);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
 
 }
-    .container{
-        color: rgb(0, 0, 5);
-        background-color: rgb(5, 106, 236);
-        border: 2px;
-        padding: 4px;
-        margin: 2px;
-        
-    }
-
