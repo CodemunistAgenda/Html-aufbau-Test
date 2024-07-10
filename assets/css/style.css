@@ -25,6 +25,8 @@ body{
     background-image: url(../images/Galaxy.webp);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: gold;
+    -webkit-text-stroke: 0.005em;
 }
 #Logo{
     height: auto;
@@ -36,6 +38,8 @@ body{
     background-image: url(../images/gold\ Folie.webp);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    
+    -webkit-text-stroke-color: hwb(0 0% 100%);
+    -webkit-text-stroke: 0.005em;
+
 
 }
