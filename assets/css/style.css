@@ -1,49 +1,72 @@
 @font-face {
-    font-family: "LibreBodoni";
-    src: url(../fonts/Libre_Bodoni/LibreBodoni-VariableFont_wght.ttf);
-    font-family: "kingdom_hearts";
-    src: url(../fonts/kingdom_hearts/Kingdom_Hearts_Font.ttf);
+  font-family: "LibreBodoni";
+  src: url(../fonts/Libre_Bodoni/LibreBodoni-VariableFont_wght.ttf);
+  font-family: "kingdom_hearts";
+  src: url(../fonts/kingdom_hearts/Kingdom_Hearts_Font.ttf);
 }
-body{
-    height: auto;
-    font-family: "LibreBodoni", sans-serif;
-    background-color: black;
-    color: bisque;
-    background-image: url(../images/Background-landing-Page.webp);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
+body {
+  height: auto;
+  font-family: "LibreBodoni";
+  background-color: black;
+  color: bisque;
+  background-image: url(../images/Background-landing-Page.webp);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
 }
-#Überschrift{
-    height: auto;
-    font-family: "kingdom_hearts";
-    font-size: 14em;
-    text-align: center;
-    position: relative ;
-    top: -0.7em;
-    background-image: url(../images/Galaxy.webp);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-color: gold;
-    -webkit-text-stroke: 0.005em;
+ul, li
+{
+    list-style: none;
 }
-#Logo{
-    height: auto;
-    font-family: "kingdom_hearts";
-    font-size: 16em;
-    text-align: center;
-    position: relative;
-    top: -1.8em;
-    background-image: url(../images/gold\ Folie.webp);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-color: hwb(0 0% 100%);
-    -webkit-text-stroke: 0.005em;
+#Überschrift {
+  height: auto;
+  font-family: "kingdom_hearts";
+  font-size: 14em;
+  text-align: center;
+  position: relative;
+  top: -0.7em;
+  background-image: url(../images/Galaxy.webp);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: gold;
+  -webkit-text-stroke: 0.005em;
 }
-#Game_Timeline{
-    height: auto;
-    position: relative;
-    font-size: 2em;
-    top: -24em;
+#Logo {
+  height: auto;
+  font-family: "kingdom_hearts";
+  font-size: 16em;
+  text-align: center;
+  position: relative;
+  top: -1.8em;
+  background-image: url(../images/gold\ Folie.webp);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: hwb(0 0% 100%);
+  -webkit-text-stroke: 0.005em;
+}
+#Game_Timeline {
+  height: auto;
+  position: relative;
+  font-size: 2em;
+  top: -24em;
+}
+/* for mobile phones */
+@media (max-width: 600px) {
+  #Überschrift {
+    font-size: 6em;
+  }
+  #Logo {
+    font-size: 6em;
+  }
+  #Game_Timeline {
+    font-size: 1.6em;
+    top: -10em;
+  }
+}
+/* for desktop */
+@media (min-width: 600px) {
+    #Game_Timeline{
+    text-align: center ;
+}
 }
