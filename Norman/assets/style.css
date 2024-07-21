@@ -1,0 +1,276 @@
+@font-face {
+  font-family: "Rocket-league";
+  src: url("Jost-600-Semi.ttf") format("truetype");
+}
+@keyframes colorchain {
+  0% {
+    background-position: 0% 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+/* start styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Rocket-league";
+}
+hr {
+  opacity: 0;
+}
+
+/* HEADER */
+
+header {
+  height: 9vh;
+  width: 100%;
+  background: linear-gradient(to right, blue, orange);
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+header img {
+  float: left;
+}
+header h2 a {
+  font-size: 2em;
+  background: linear-gradient(to right, white, rgb(151, 28, 28));
+  background-clip: text;
+  color: transparent;
+  display: inline;
+  text-decoration: none;
+  margin: 3%;
+  max-width: max-content;
+  position: relative;
+  top: -10px;
+}
+header h2 a:after {
+  content: "";
+  height: 4px;
+  position: absolute;
+  width: 0%;
+  background: linear-gradient(to right, white, rgb(151, 28, 28));
+  bottom: 0;
+  left: 0;
+  transition: 500ms;
+}
+header h2 a:hover:after {
+  width: 100%;
+}
+nav {
+  float: right;
+  font-size: 1.4em;
+  position: absolute;
+  right: 40px;
+  top: 10px;
+}
+li {
+  float: left;
+  list-style-type: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  margin: 0 10px;
+}
+nav ul li a:hover {
+  background: linear-gradient(to right, blue, blue, blue, blue, blue, blue);
+  background-clip: text;
+  color: transparent;
+  transition: 900ms;
+  text-decoration: underline;
+}
+
+/* HEADER ENDE */
+
+/* HOME SECTION */
+#Home {
+  background-image: url(images/bc-pic.webp);
+  margin-top: 10vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  box-shadow: 0 10px 20px 0 blue;
+}
+#Home hr {
+  opacity: 0;
+  margin-bottom: 70vh;
+}
+h1 {
+  font-size: 10em;
+  background: linear-gradient(to bottom, white, white, black);
+  background-clip: text;
+  color: transparent;
+  position: relative;
+  margin: 0 auto;
+  max-width: max-content;
+}
+h1:after {
+  content: "";
+  height: 8px;
+  position: absolute;
+  width: 100%;
+  background: linear-gradient(
+    to right,
+    #fff 0%,
+    #fff 20%,
+    #000 40%,
+    #fff 60%,
+    #fff 80%,
+    #fff 100%
+  );
+  background-size: 500% 100%; /* 5-fache Breite der Originalgröße */
+  animation: colorchain 5s infinite linear; /* linear für gleichmäßigen Übergang */
+  bottom: 40px;
+  left: 0;
+}
+
+/* HOME SECTION ENDE */
+
+/* ABOUT SECTION */
+
+main {
+  box-shadow: 0 -20px 5px blue, 0 20px 5px orange;
+  background: linear-gradient(to bottom, blue, blue, orange);
+  background-size: 100%;
+  background-color: orange;
+}
+main hr {
+  opacity: 0;
+  margin-bottom: 20vh;
+}
+main h2 {
+  font-size: 4em;
+  background: linear-gradient(to right, white, rgb(151, 28, 28));
+  background-clip: text;
+  color: transparent;
+  max-width: max-content;
+  position: relative;
+  margin: auto;
+  top: -10px;
+}
+#About aside p {
+  margin: 0 auto;
+  max-width: 60%;
+  text-align: center;
+  color: #efe;
+  font-size: 1.5em;
+}
+#hitbox-container h2 {
+  color: #f3f3f3;
+  text-decoration: underline;
+  margin: 5% auto;
+}
+#hitbox-container p {
+  color: #f3f3f3;
+  width: 30%;
+  text-align: center;
+  font-size: 1.5em;
+  margin-left: 60%;
+}
+#hitbox-container img {
+  width: 30%;
+  height: 30%;
+  display: inline-block;
+  margin-left: 10%;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px black;
+  position: relative;
+  top: -30vh;
+}
+
+/* ABOUT SECTION ENDE */
+
+/* COMMUNITY SECTION */
+
+#Community {
+  background: linear-gradient(to bottom, orange, orange, blue);
+  background-size: 100%;
+  background-color: orange;
+  box-shadow: 0 -20px 5px orange;
+}
+#Community hr {
+  opacity: 0;
+  margin-bottom: 10vh;
+}
+#Community h2 {
+  font-size: 6em;
+  color: #000;
+  max-width: max-content;
+  margin: auto;
+}
+#Community p {
+  text-align: center;
+  margin: 0 auto;
+}
+#container {
+  display: flex;
+}
+.Com-container {
+  margin: 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Com-container h3 {
+  font-size: 3em;
+  color: rgb(0, 128, 170);
+}
+.Com-container p {
+  font-size: 1.7em;
+  color: #000;
+  font-style: italic;
+}
+.Com-container img {
+  size: cover;
+  width: 60%;
+  margin-bottom: 5vh;
+}
+.Com-container a {
+  font-size: 2em;
+  text-decoration: none;
+  color: #fefefe;
+}
+.Com-container a:hover {
+  transition: 500ms;
+  color: #ababab;
+  font-size: 2.1em;
+}
+
+#icon-container,
+#icon-description {
+  background: linear-gradient(to top, blue);
+  color: white;
+  font-size: 1.2em;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 10px 0;
+}
+
+#youtube {
+  color: red;
+}
+
+#twitch {
+  color: black;
+}
+
+#tiktok {
+  color: black;
+}
+
+/* COMMUNITY SECTION ENDE */
+
+/* FOOTER  */
+
+footer {
+  background-color: blue;
+  font-size: 0.7em;
+  color: white;
+}
